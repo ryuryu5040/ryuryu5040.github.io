@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  PROJECT_DIR: tarkov-maps
+  PROJECT_DIR: ryuno_asobiba
 
 jobs:
   build:
@@ -97,3 +97,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
