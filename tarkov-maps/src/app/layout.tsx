@@ -56,7 +56,7 @@ export default function RootLayout({
           {/* フッター */}
           <footer className="border-t border-lime-200 bg-lime-100/70">
             <div className="mx-auto max-w-5xl px-6 py-4 text-xs text-lime-900/70">
-              Not affiliated with Battlestate Games
+              nanka kaiteokeba soreppoi kana
             </div>
           </footer>
         </div>
