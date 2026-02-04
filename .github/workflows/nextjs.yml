@@ -82,10 +82,6 @@ jobs:
         working-directory: ${{ env.PROJECT_DIR }}
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
-      - name: Static HTML export with Next.js (in subfolder)
-        working-directory: ${{ env.PROJECT_DIR }}
-        run: ${{ steps.detect-package-manager.outputs.runner }} next export
-
       - name: Upload artifact (out in subfolder)
         uses: actions/upload-pages-artifact@v3
         with:
