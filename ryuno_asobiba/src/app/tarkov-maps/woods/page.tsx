@@ -1,9 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/components/buttom"
 import { Zen_Maru_Gothic } from 'next/font/google'
-
 
 const zenMaru = Zen_Maru_Gothic({
   weight: ['700'],
@@ -13,11 +11,18 @@ const zenMaru = Zen_Maru_Gothic({
 function page() {
   return (
     <div>
-      <div className='mb-10'>
-        <Button link="/tarkov-maps/woods"  label="Woods" />
-
-        <Button link="/tarkov-maps/customs" label="Customs" />
+      <div>
+        <h1 className={`${zenMaru.className} text-6xl font-bold mb-10`}>Woods</h1>
       </div>
+      <div>
+        <Image 
+          src="/images/tarkovMaps/woodsMap.png"
+          alt="Escape from Tarkov Woods map"
+          width={800}
+          height={600}
+        />
+      </div>
+      
     </div>
   )
 }

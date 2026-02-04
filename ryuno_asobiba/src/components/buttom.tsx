@@ -21,6 +21,7 @@ export default function Button({ link,  label,}: Props) {
           transition
           hover:bg-gray-600
           hover:scale-105
+          mx-3
         "
       >
         {label}
