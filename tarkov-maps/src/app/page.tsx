@@ -1,56 +1,65 @@
 import Image from "next/image";
-import Box from "../components/box";
-import Baloon from "@/components/baloon";
-import Quote from "@/components/memo";
 
 export default function Home() {
   return (
-    <main>
-      <Box>
-        <h1 className="text-2xl font-bold">Welcome to the Home Page</h1>
+    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
+          className="dark:invert"
           src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
+          alt="Next.js logo"
+          width={100}
+          height={20}
           priority
         />
-      </Box>
-      <Box>
-        sasasabi-log.netへようこそ！
-        <br/>
-        sasasabi-log.netは笹錆が運営する技術ブログです。
-        <br/>
-        主にプログラミング、IT技術、ガジェットレビューなどの記事を掲載しています。
-        <br/>
-        どうぞごゆっくりお楽しみください。 
-      </Box>
-      <Box>
-        sasasabi-log.netへようこそ！
-        <br/>
-        sasasabi-log.netは笹錆が運営する技術ブログです。
-        <br/>
-        主にプログラミング、IT技術、ガジェットレビューなどの記事を掲載しています。
-        <br/>
-        どうぞごゆっくりお楽しみください。 
-        <Baloon icon="dRagon" name="">
-          いまから遊ぶぞ。<br/>
-          いいから。
-        </Baloon>
-        <Baloon icon="dRagon" name="">いまから遊ぶぞ。</Baloon>
-        <Baloon icon="Salary" name="??">いまから遊ぶぞ。</Baloon>
-        <Baloon icon="dRagon" name="??">いまから遊ぶぞ。</Baloon>
-        sasasabi-log.netへようこそ！
-        <br/>
-        sasasabi-log.netは笹錆が運営する技術ブログです。
-        <br/>
-        主にプログラミング、IT技術、ガジェットレビューなどの記事を掲載しています。
-        <br/>
-        どうぞごゆっくりお楽しみください。 
-        <Quote title="引用例">
-          つまみ (@TrpFrog) は、インターネット上で非常に人気のあるコメディアンの一人です。彼女はユーモラスで機知に富んだ発言を次々と生み出し、その才能は多くのファンを魅了しています。特に、彼女の可愛らしいアイコン画像から想像できないような大胆かつ痛快な発言は、彼女のユニークな魅力の一部となっています。
-        </Quote>
-      </Box>
-    </main>
+        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+            To get started, edit the page.tsx file.
+          </h1>
+          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+            Looking for a starting point or more instructions? Head over to{" "}
+            <a
+              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              className="font-medium text-zinc-950 dark:text-zinc-50"
+            >
+              Templates
+            </a>{" "}
+            or the{" "}
+            <a
+              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              className="font-medium text-zinc-950 dark:text-zinc-50"
+            >
+              Learning
+            </a>{" "}
+            center.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+          <a
+            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
+            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              className="dark:invert"
+              src="/vercel.svg"
+              alt="Vercel logomark"
+              width={16}
+              height={16}
+            />
+            Deploy Now
+          </a>
+          <a
+            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
+            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Documentation
+          </a>
+        </div>
+      </main>
+    </div>
   );
 }
