@@ -25,7 +25,7 @@ concurrency:
   cancel-in-progress: false 
 
 env:
-  project: tarkov-dev
+  project: tarkov-maps
  
 jobs: 
   # Build job 
