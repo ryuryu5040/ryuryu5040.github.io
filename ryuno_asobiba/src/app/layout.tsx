@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
 
 import Link from "next/link";
@@ -12,6 +12,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const zenMaru = Zen_Maru_Gothic({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-zen-maru",
 });
 
 export const metadata: Metadata = {
@@ -39,7 +45,7 @@ export default function RootLayout({
         <div className="min-h-screen flex flex-col">
           {/* ヘッダー */}
           <header className="border-b border-lime-200 bg-lime-100/70">
-            <div className="mx-auto max-w-5xl px-6 py-4">
+            <div className="px-6 py-4">
               <h1 className="text-lg font-semibold text-lime-900">
                 <Link href="/">りゅーの遊び場</Link>
               </h1>
@@ -55,7 +61,7 @@ export default function RootLayout({
 
           {/* フッター */}
           <footer className="border-t border-lime-200 bg-lime-100/70">
-            <div className="mx-auto max-w-5xl px-6 py-4 text-xs text-lime-900/70">
+            <div className="mx-auto px-6 py-4 text-xs text-lime-900/70">
               nanka kaiteokeba soreppoi kana
             </div>
           </footer>
