@@ -66,9 +66,9 @@ export default function MapViewer({ images }: Props) {
 
 
           <TransformWrapper
-            minScale={0.5}
-            maxScale={4}
-            wheel={{ step: 0.1 }}
+            minScale={0.8}
+            maxScale={6}
+            wheel={{ step: 0.2 }}
             pinch={{ step: 5 }}
             doubleClick={{ disabled: true }}
           >
