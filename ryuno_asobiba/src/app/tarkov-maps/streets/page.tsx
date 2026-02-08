@@ -27,7 +27,7 @@ function page() {
 
       <MapViewer 
       images={[
-        { label: '説明無し', src: '/images/tarkovMaps/StreetsMap.webp' },
+        { label: '説明無し', src: '/images/tarkovMaps/streetsMap.webp' },
       ]}/>
 
       <div className={`${zenMaru.className}`}>
