@@ -19,7 +19,7 @@ function page() {
         <h1 className={`${zenMaru.className} text-6xl font-bold`}>Interchange</h1>
         <Link
             href="/tarkov-maps"
-            className="text-indigo-900 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors text-xl"
+            className="shrink-0 text-indigo-900 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors text-xl"
             >
                 戻る
         </Link>
