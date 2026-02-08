@@ -70,7 +70,7 @@ export default function MapViewer({ images }: Props) {
             maxScale={6}
             wheel={{ step: 0.2 }}
             pinch={{ step: 5 }}
-            doubleClick={{ disabled: true }}
+            doubleClick={{ disabled: false }}
           >
             <TransformComponent>
               <div className="relative w-screen h-screen">
