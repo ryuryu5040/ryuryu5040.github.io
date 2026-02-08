@@ -45,8 +45,8 @@ export default function RootLayout({
         <div className="min-h-screen flex flex-col">
           {/* ヘッダー */}
           <header className="border-b border-lime-200 bg-lime-100/70">
-            <div className="px-6 py-4">
-              <h1 className="text-lg font-semibold text-lime-900">
+            <div className="px-4 py-4">
+              <h1 className={`${zenMaru.className} text-lg font-semibold text-lime-900`}>
                 <Link href="/">りゅーの遊び場</Link>
               </h1>
             </div>
@@ -54,14 +54,14 @@ export default function RootLayout({
 
           {/* メイン */}
           <main className={`flex-1`}>
-            <div className="mx-auto max-w-5xl px-6 py-12">
+            <div className="mx-auto max-w-7xl px-2 py-6">
               {children}
             </div>
           </main>
 
           {/* フッター */}
           <footer className="border-t border-lime-200 bg-lime-100/70">
-            <div className="mx-auto px-6 py-4 text-xs text-lime-900/70">
+            <div className="mx-auto px-4 py-4 text-xs text-lime-900/70">
               nanka kaiteokeba soreppoi kana
             </div>
           </footer>
