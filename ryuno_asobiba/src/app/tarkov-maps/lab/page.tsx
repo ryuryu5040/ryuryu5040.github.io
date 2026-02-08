@@ -16,7 +16,7 @@ function page() {
   return (
     <div>
       <div className='flex justify-between items-baseline mb-10'>
-        <h1 className={`${zenMaru.className} text-6xl font-bold`}>Woods</h1>
+        <h1 className={`${zenMaru.className} text-6xl font-bold`}>The Lab</h1>
         <Link
             href="/tarkov-maps"
             className="text-indigo-900 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors text-xl"
@@ -27,20 +27,19 @@ function page() {
 
       <MapViewer 
       images={[
-        { label: '説明無し', src: '/images/tarkovMaps/woodsMap.png' },
-        { label: '説明付き', src: '/images/tarkovMaps/woodsMapText.png' },
+        { label: '説明無し', src: '/images/tarkovMaps/labMap.webp' },
       ]}/>
 
       <div className={`${zenMaru.className}`}>
         <div className = "mb-2">
             <Link
-                href="https://escapefromtarkov.fandom.com/wiki/Woods"
+                href="https://escapefromtarkov.fandom.com/wiki/The_Lab"
                 className="text-orange-400 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors items-center mx-2"
                 target="_blank">
                     公式Wiki
             </Link>
             <Link 
-                href="https://wikiwiki.jp/eft/WOODS"
+                href="https://wikiwiki.jp/eft/THE%20LAB"
                 className="text-orange-400 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors items-center mx-2"
                 target="_blank">
                     日本語Wiki
@@ -48,7 +47,7 @@ function page() {
         </div>
         <div>
             <p>
-                OUTSKIRTS か UN ROADBLOCK のどちらかの脱出は確定
+                
             </p>
         </div>
       </div>

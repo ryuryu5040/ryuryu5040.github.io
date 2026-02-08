@@ -1,7 +1,10 @@
-import React from 'react';
+'use client'
+
+import React, {useState} from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { Zen_Maru_Gothic } from 'next/font/google'
+import MapViewer from '@/components/MapViewer';
 
 const zenMaru = Zen_Maru_Gothic({
   weight: ['700'],
@@ -9,20 +12,46 @@ const zenMaru = Zen_Maru_Gothic({
 })
 
 function page() {
+  const [withText, setWithText] = useState(true)
   return (
     <div>
-      <div>
-        <h1 className={`${zenMaru.className} text-6xl font-bold mb-10`}>Customs</h1>
+      <div className='flex justify-between items-baseline mb-10'>
+        <h1 className={`${zenMaru.className} text-6xl font-bold`}>Customs</h1>
+        <Link
+            href="/tarkov-maps"
+            className="text-indigo-900 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors text-xl"
+            >
+                戻る
+        </Link>
       </div>
-      <div>
-        <Image 
-          src="/images/tarkovMaps/customsMap.png"
-          alt="Escape from Tarkov Woods map"
-          width={800}
-          height={600}
-        />
+
+      <MapViewer 
+      images={[
+        { label: '説明無し', src: '/images/tarkovMaps/customsMap.webp' },
+        { label: '説明付き', src: '/images/tarkovMaps/customsMapText.png' },
+      ]}/>
+
+      <div className={`${zenMaru.className}`}>
+        <div className = "mb-2">
+            <Link
+                href="https://escapefromtarkov.fandom.com/wiki/Customs"
+                className="text-orange-400 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors items-center mx-2"
+                target="_blank">
+                    公式Wiki
+            </Link>
+            <Link 
+                href="https://wikiwiki.jp/eft/CUSTOMS"
+                className="text-orange-400 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors items-center mx-2"
+                target="_blank">
+                    日本語Wiki
+            </Link>
+        </div>
+        <div>
+            <p>
+                
+            </p>
+        </div>
       </div>
-      
     </div>
   )
 }
