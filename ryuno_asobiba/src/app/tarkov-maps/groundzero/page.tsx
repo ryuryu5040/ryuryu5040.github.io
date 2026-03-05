@@ -16,10 +16,10 @@ function page() {
   return (
     <div>
       <div className='flex justify-between items-baseline mb-10'>
-        <h1 className={`${zenMaru.className} text-6xl font-bold`}>Reserve</h1>
+        <h1 className={`${zenMaru.className} text-6xl font-bold`}>Ground Zero</h1>
         <Link
             href="/tarkov-maps"
-            className="text-indigo-900 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors text-xl"
+            className="shrink-0 text-indigo-900 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors text-xl"
             >
                 戻る
         </Link>
@@ -27,20 +27,20 @@ function page() {
 
       <MapViewer 
       images={[
-        { label: '説明無し', src: '/images/tarkovMaps/reserveMap.webp' },
-        { label: '説明付き', src: '/images/tarkovMaps/reserveMapText.png' },
+        { label: '説明無し', src: '/images/tarkovMaps/groundZeroMap.webp' },
+        { label: '説明付き', src: '/images/tarkovMaps/groundZeroMapText.jpg' },
       ]}/>
 
       <div className={`${zenMaru.className}`}>
         <div className = "mb-2">
             <Link
-                href="https://escapefromtarkov.fandom.com/wiki/Reserve"
+                href="https://escapefromtarkov.fandom.com/wiki/Ground_Zero"
                 className="text-orange-400 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors items-center mx-2"
                 target="_blank">
                     公式Wiki
             </Link>
             <Link 
-                href="https://wikiwiki.jp/eft/RESERVE"
+                href="https://wikiwiki.jp/eft/GROUND%20ZERO"
                 className="text-orange-400 hover:text-orange-800 underline decoration-2 underline-offset-4 transition-colors items-center mx-2"
                 target="_blank">
                     日本語Wiki

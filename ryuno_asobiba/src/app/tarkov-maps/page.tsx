@@ -15,6 +15,7 @@ function page() {
   return (
     <div className=" mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <MapCard title="Ground Zero" href="/tarkov-maps/groundzero" image="/images/tarkovMapImages/groundZeroImage.webp" />
         <MapCard title="Woods" href="/tarkov-maps/woods" image="/images/tarkovMapImages/woodsImage.webp" />
         <MapCard title="Customs" href="/tarkov-maps/customs" image="/images/tarkovMapImages/customsImage.webp" />
         <MapCard title="Shoreline" href="/tarkov-maps/shoreline" image="/images/tarkovMapImages/shorelineImage.webp" />
